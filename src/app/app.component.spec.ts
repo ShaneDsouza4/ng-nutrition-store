@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ng-animal-gallery'`, () => {
+  it(`should have as title 'ng-nutrition-store'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ng-animal-gallery');
+    expect(app.title).toEqual('ng-nutrition-store');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-animal-gallery app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('ng-nutrition-store app is running!');
   });
 });
